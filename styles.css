@@ -25,7 +25,6 @@ body {
     #search-word {
       font-size: 16px;
       padding: 5px;
-      border-radius: 5px;
       border: none;
       border-bottom: 2px solid #474b4e;
       outline: none;
@@ -43,7 +42,7 @@ body {
       cursor: pointer;
       transition: all 0.5s ease;
       &:hover {
-        transform: scale(1.0975);
+        transform: scale(1.0575);
       }
     }
   }

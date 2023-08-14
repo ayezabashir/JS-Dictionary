@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
       <div class="search">
         <input id="search-word" type="text" placeholder="Search word here..." />
         <button id="search-btn" type="submit">Search</button>
+      </div>
+      <div class="search-result">
+        <div class="word">
+          <h3>word</h3>
+          <button>
+            <i class="fas fa-volume-up"></i>
+          </button>
+        </div>
+        <div class="details">
+          <p>abc</p>
+          <p>/abc/</p>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
