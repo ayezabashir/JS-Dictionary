@@ -79,8 +79,9 @@ p {
       text-align: justify;
       color: var(--primary-color);
     }
-    .sentence {
-      margin-top: 0.8rem;
+    .sentence,
+    .origin {
+      margin-top: 1rem;
       color: var(--primary-color);
       border-left: 5px solid var(--primary-color);
       padding-left: 10px;
