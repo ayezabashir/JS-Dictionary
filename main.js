@@ -12,7 +12,7 @@ searchBtn.addEventListener('click', () => {
             searchResult.innerHTML = `
             <div class="word">
                 <h2>${searchWord}</h2>
-                <button class="icon">
+                <button onclick="playSound()" class="icon">
                     <i class="fas fa-volume-up"></i>
                 </button>
             </div>
@@ -25,7 +25,16 @@ searchBtn.addEventListener('click', () => {
                 <b>Sentence: </b>
                 <i>${data[0].meanings[0].definitions[0].example || 'No sentence found'}</i>
             </div>
+            `;
+            sound.setAttribute("src", `${data[0].phonetics[0].audio || data[0].phonetics[1].audio}`);
+        })
+        .catch(() => {
+            searchResult.innerHTML = `
+            <h3 class="error">Could not find the word</h3>
             `
-        });
+        })
 })
 
+function playSound() {
+    sound.play();
+}
